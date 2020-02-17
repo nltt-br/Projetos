@@ -11,7 +11,7 @@ class UsePsExec:
 
     def m_psexec(self):
 
-        string = "C:\\Users\\anderson.cesar\\Documents\\consumer_exploitdb\\find-exploitdb\\PsExec64.exe \\\\{} -u {}@local.domain -p {} ipconfig > info.txt"
+        string = "dir\\PsExec64.exe \\\\{} -u {}@local.domain -p {} ipconfig > info.txt"
         string_mod = string.format(self._ip, self._user, self._password)
 
         system(string_mod)
